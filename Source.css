@@ -1,91 +1,141 @@
+:root{
+--main-color: #009688;
+--hover-color: #4CAF50;
+--success-color: #43b581;
+--danger-color: #982929;
+--channel-unread: var(--main-color);
+--channel-color: rgba(255, 255, 255, 0.3);
+--muted-color: rgba(255, 255, 255, 0.1);
+--channel-text-selected: #fff;
+--url-color: var(--main-color);
+--online-color: #43b581;
+--idle-color: #faa61a;
+--dnd-color: #982929;
+--offline-color: #808080;
+--streaming-color: #593695;
+--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace;
+--font-display: var(--main-font);
+--text-normal: rgb(220, 221, 222);
+--text-muted: rgb(114, 118, 125);
+--channels-width: 220px;--members-width: 240px;
 
-:root {
-  --main-color: #009688;
-  --hover-color: #4CAF50;
-  --success-color: #43b581;
-  --danger-color: #982929;
-  --url-color: #3F51B5;
-  --background-image: url('https://github.com/smaugue/ThemeSource/blob/main/ressources/images/background.svg');
-  --background-shading: 100%;
-  --background-position: center;
-  --background-size: cover;
-  --background-repeat: no-repeat;
-  --background-attachment: fixed;
-  --background-brightness: 100%;
-  --background-contrast: 100%;
-  --background-saturation: 100%;
-  --background-grayscale: 0%;
-  --background-invert: 0%;
-  --background-blur: 0px;
-  --background-overlay: rgba(0,0,0,0.6);
-  /*--user-popout-image: .png;*/
-  --user-popout-position: center;
-  --user-popout-size: cover;
-  --user-popout-repeat: no-repeat;
-  --user-popout-attachment: fixed;
-  --user-popout-brightness: 100%;
-  --user-popout-contrast: 100%;
-  --user-popout-saturation: 100%;
-  --user-popout-grayscale: 0%;
-  --user-popout-invert: 0%;
-  --user-popout-blur: 3px;
-  /*--user-modal-image: .png;*/
-  --user-modal-position: center;
-  --user-modal-size: cover;
-  --user-modal-repeat: no-repeat;
-  --user-modal-attachment: fixed;
-  --user-modal-brightness: 100%;
-  --user-modal-contrast: 100%;
-  --user-modal-saturation: 100%;
-  --user-modal-grayscale: 0%;
-  --user-modal-invert: 0%;
-  --user-modal-blur: 3px;
-  /*--home-icon: .png;*/
-  --home-position: center;
-  --home-size: 40px;
-  --channel-unread: var(--main-color);
-  --channel-color: rgba(255,255,255,0.3);
-  --muted-color: rgba(255,255,255,0.1);
-  --online-color: #43b581;
-  --idle-color: #faa61a;
-  --dnd-color: #982929;
-  --streaming-color: #593695;
-  --offline-color: #808080;
-  --main-font: Whitney;
-  --code-font: Consolas;
-  --channels-width: 220px;
-  --members-width: 240px;
-  --backdrop-overlay: rgba(0,0,0,0.8);
-  --backdrop-image: var(--background-image);
-  --backdrop-position: var(--background-position);
-  --backdrop-size: var(--background-size);
-  --backdrop-repeat: var(--background-repeat);
-  --backdrop-attachment: var(--background-attachment);
-  --backdrop-brightness: var(--background-brightness);
-  --backdrop-contrast: var(--background-contrast);
-  --backdrop-saturation: var(--background-saturation);
-  --backdrop-invert: var(--background-invert);
-  --backdrop-grayscale: var(--background-grayscale);
-  --backdrop-sepia: var(--background-sepia);
-  --backdrop-blur: var(--background-blur);
-  --bd-blue: var(--main-color);
-  --bd-blue-hover: var(--hover-color);
-  --bd-blue-active: var(--hover-color);
-  --rs-small-spacing: 2px;
-  --rs-medium-spacing: 2px;
-  --rs-large-spacing: 2px;
-  --rs-small-width: 2px;
-  --rs-medium-width: 2px;
-  --rs-large-width: 2px;
-  --rs-avatar-shape: 50%;
-  --rs-online-color: #43b581;
-  --rs-idle-color: #faa61a;
-  --rs-dnd-color: #f04747;
-  --rs-offline-color: #636b75;
-  --rs-streaming-color: #643da7;
-  --rs-phone-visible: block;
+--background-shading: 100%;--background-overlay: rgba(0, 0, 0, 0.6);
+--background-image: url(https://github.com/smaugue/ThemeSource/blob/main/ressources/images/background.svg);
+--background-position: center;
+--background-size: cover;
+--background-repeat: no-repeat;
+--background-attachment: fixed;
+--background-brightness: 100%;
+--background-contrast: 100%;
+--background-saturation: 100%;
+--background-invert: 0%;
+--background-grayscale: 0%;
+--background-sepia: 0%;
+--background-blur: 0px;
+
+--backdrop-overlay: rgba(0, 0, 0, 0.8);
+--backdrop-image: var(--background-image);
+--backdrop-position: var(--background-position);
+--backdrop-size: var(--background-size);
+--backdrop-repeat: var(--background-repeat);
+--backdrop-attachment: var(--background-attachment);
+--backdrop-brightness: var(--background-brightness);
+--backdrop-contrast: var(--background-contrast);
+--backdrop-saturation: var(--background-saturation);
+--backdrop-invert: var(--background-invert);
+--backdrop-grayscale: var(--background-grayscale);
+--backdrop-sepia: var(--background-sepia);
+--backdrop-blur: var(--background-blur);
+
+--user-popout-image: var(--background-image);
+--user-popout-position: var(--background-position);
+--user-popout-size: var(--background-size);
+--user-popout-repeat: var(--background-repeat);
+--user-popout-attachment: var(--background-attachment);
+--user-popout-brightness: var(--background-brightness);
+--user-popout-contrast: var(--background-contrast);
+--user-popout-saturation: var(--background-saturation);
+--user-popout-invert: var(--background-invert);
+--user-popout-grayscale: var(--background-grayscale); /*; added*/
+--user-popout-sepia: var(--background-sepia);
+--user-popout-blur: calc(var(--background-blur));
+--user-popout-overlay: rgba(0, 0, 0, 0.65);
+
+--user-modal-image: var(--background-image);
+--user-modal-position: var(--background-position);
+--user-modal-size: var(--background-size);
+--user-modal-repeat: var(--background-repeat);
+--user-modal-attachment: var(--background-attachment);
+--user-modal-brightness: var(--background-brightness);
+--user-modal-contrast: var(--background-contrast);
+--user-modal-saturation: var(--background-saturation);
+--user-modal-invert: var(--background-invert);
+--user-modal-grayscale: var(--background-grayscale);
+--user-modal-sepia: var(--background-sepia);
+--user-modal-blur: calc(var(--background-blur));
+
+--home-icon: url(https://github.com/smaugue/ThemeSource/blob/main/ressources/images/home.svg);--home-position: center;
+--home-size: 100px;
+
+--bd-blue: var(--main-color);
+--bd-blue-hover: var(--hover-color);
+--bd-blue-active: var(--hover-color)
 }
 
-/* Any custom CSS below here */
-
-
+@-webkit-keyframes cv-fade-in{from{opacity:0}to{opacity:1}}
+@keyframes cv-fade-in{from{opacity:0}to{opacity:1}}
+@-webkit-keyframes cv-fade-to-1{from{opacity:0}to{opacity:0.1}}
+@keyframes cv-fade-to-1{from{opacity:0}to{opacity:0.1}}
+@-webkit-keyframes cv-fade-to-2{from{opacity:0}to{opacity:0.2}}
+@keyframes cv-fade-to-2{from{opacity:0}to{opacity:0.2}}
+@-webkit-keyframes cv-fade-to-3{from{opacity:0}to{opacity:0.3}}
+@keyframes cv-fade-to-3{from{opacity:0}to{opacity:0.3}}
+@-webkit-keyframes cv-fade-to-4{from{opacity:0}to{opacity:0.4}}
+@keyframes cv-fade-to-4{from{opacity:0}to{opacity:0.4}}
+@-webkit-keyframes cv-fade-to-5{from{opacity:0}to{opacity:0.5}}
+@keyframes cv-fade-to-5{from{opacity:0}to{opacity:0.5}}
+@-webkit-keyframes cv-fade-to-6{from{opacity:0}to{opacity:0.6}}
+@keyframes cv-fade-to-6{from{opacity:0}to{opacity:0.6}}
+@-webkit-keyframes cv-fade-to-7{from{opacity:0}to{opacity:0.7}}
+@keyframes cv-fade-to-7{from{opacity:0}to{opacity:0.7}}
+@-webkit-keyframes cv-fade-to-8{from{opacity:0}to{opacity:0.8}}
+@keyframes cv-fade-to-8{from{opacity:0}to{opacity:0.8}}
+@-webkit-keyframes cv-fade-to-9{from{opacity:0}to{opacity:0.9}}
+@keyframes cv-fade-to-9{from{opacity:0}to{opacity:0.9}}
+@-webkit-keyframes cv-slide-top{from{top:100%}to{top:0}}
+@keyframes cv-slide-top{from{top:100%}to{top:0}}
+@-webkit-keyframes cv-slide-right{from{right:100%}to{right:0}}
+@keyframes cv-slide-right{from{right:100%}to{right:0}}
+@-webkit-keyframes cv-slide-bottom{from{bottom:100%}to{bottom:0}}
+@keyframes cv-slide-bottom{from{bottom:100%}to{bottom:0}}
+@-webkit-keyframes cv-slide-left{from{left:100%}to{left:0}}
+@keyframes cv-slide-left{from{left:100%}to{left:0}}
+@-webkit-keyframes cv-channel-select{from{right:100%;background-color:rgba(0,0,0,0)}to{right:0;background-color:var(--main-color)}}
+@keyframes cv-channel-select{from{right:100%;background-color:rgba(0,0,0,0)}to{right:0;background-color:var(--main-color)}}
+@-webkit-keyframes cv-message-jump{from{background:rgba(255,255,255,.3)}to{background:rgba(0,0,0,0)}}
+@keyframes cv-message-jump{from{background:rgba(255,255,255,.3)}to{background:rgba(0,0,0,0)}}
+@-webkit-keyframes cv-update-spin{from{transform:rotateZ(0) scaleX(-1)}to{transform:rotateZ(360deg) scaleX(-1)}}
+@keyframes cv-update-spin{from{transform:rotateZ(0) scaleX(-1)}to{transform:rotateZ(360deg) scaleX(-1)}}
+@-webkit-keyframes cv-update-downloading{0%{background-size:24px,10px 0}50%{background-position:center,50% 10px;background-size:24px,10px 10px}100%{background-position:center,50% 20px;background-size:24px,10px 0}}
+@keyframes cv-update-downloading{0%{background-size:24px,10px 0}50%{background-position:center,50% 10px;background-size:24px,10px 10px}100%{background-position:center,50% 20px;background-size:24px,10px 0}}
+@-webkit-keyframes cv-spin{from{transform:rotateZ(0)}to{transform:rotateZ(360deg)}}
+@keyframes cv-spin{from{transform:rotateZ(0)}to{transform:rotateZ(360deg)}}
+@-webkit-keyframes cv-spinner-glow{from{filter:drop-shadow(0 0 3px var(--main-color))}to{filter:drop-shadow(0 0 3px var(--main-color)) drop-shadow(0 0 15px var(--main-color))}}
+@keyframes cv-spinner-glow{from{filter:drop-shadow(0 0 3px var(--main-color))}to{filter:drop-shadow(0 0 3px var(--main-color)) drop-shadow(0 0 15px var(--main-color))}}
+@-webkit-keyframes cv-spinner-pulse{from{transform:scale(0.8);opacity:.3}to{transform:none;opacity:1}}
+@keyframes cv-spinner-pulse{from{transform:scale(0.8);opacity:.3}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-menu-fold-y{from{transform:rotateX(-90deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes cv-menu-fold-y{from{transform:rotateX(-90deg);opacity:0}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-menu-fold-x{from{transform:rotateY(-90deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes cv-menu-fold-x{from{transform:rotateY(-90deg);opacity:0}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-menu-slide-top{from{transform:translateY(-100%);opacity:0}to{transform:none;opacity:1}}
+@keyframes cv-menu-slide-top{from{transform:translateY(-100%);opacity:0}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-menu-slide-bottom{from{transform:translateY(100%);opacity:0}to{transform:none;opacity:1}}
+@keyframes cv-menu-slide-bottom{from{transform:translateY(100%);opacity:0}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-menu-slide-left{from{transform:translateX(-100%);opacity:0}to{transform:none;opacity:1}}
+@keyframes cv-menu-slide-left{from{transform:translateX(-100%);opacity:0}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-menu-slide-right{from{transform:translateX(100%);opacity:0}to{transform:none;opacity:1}}
+@keyframes cv-menu-slide-right{from{transform:translateX(100%);opacity:0}to{transform:none;opacity:1}}
+@-webkit-keyframes cv-shadow-pulse{0%{box-shadow:0 0 6px 2px var(--main-color)}50%{box-shadow:0 0 10px 2px var(--main-color)}100%{box-shadow:0 0 6px 2px var(--main-color)}}
+@keyframes cv-shadow-pulse{0%{box-shadow:0 0 6px 2px var(--main-color)}50%{box-shadow:0 0 10px 2px var(--main-color)}100%{box-shadow:0 0 6px 2px var(--main-color)}}
